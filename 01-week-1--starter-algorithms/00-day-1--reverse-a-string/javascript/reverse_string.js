@@ -1,9 +1,20 @@
+// Please add your pseudocode to this file
+//////////////////////////////////////////
+// I need to return a string but with all of its characters in reverse order.
+//////////////////////////////////////////
+// And a written explanation of your solution
+
+
 function reverseString(str) {
-  // type your code here
+  // First I can split() the string into an array of characters
+  let strArray = str.split('')
+  // Then reverse() the array
+  let reverse = strArray.reverse()
+  // And join() all the character back together.
+  return reverse.join('')
 }
 
 if (require.main === module) {
-  // add your own tests in here
   console.log("Expecting: 'ih'");
   console.log("=>", reverseString("hi"));
 
@@ -15,5 +26,3 @@ if (require.main === module) {
 
 module.exports = reverseString;
 
-// Please add your pseudocode to this file
-// And a written explanation of your solution
